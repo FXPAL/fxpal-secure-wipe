@@ -38,6 +38,9 @@
 
 ## Wipe Mac Laptop
 
+1. Remove all of `Internet Accounts` in `Settings`
+   * Open `Settings > Internet Accounts`
+   * Select each account and click `-` button at the bottom left
 1. Sign out of iTunes
    * Open iTunes
    * From the menu bar at the top of your computer screen or at the top of the iTunes window, choose `Account > Authorizations > Deauthorize This Computer`.
