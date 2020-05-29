@@ -76,15 +76,182 @@
               
               <article class="markdown-body entry-content" itemprop="text" id="grip-content">
                 <h1>
-<a id="user-content-how-to-securely-wipe-your-laptopios" class="anchor" href="#how-to-securely-wipe-your-laptopios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to securely wipe your laptop/iOS</h1>
+<a id="user-content-how-to-securely-wipe-your-laptop-andor-mobile-phones" class="anchor" href="#how-to-securely-wipe-your-laptop-andor-mobile-phones" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to securely wipe your laptop and/or mobile phones</h1>
 <h2>
 <a id="user-content-what-type-of-device-would-you-like-to-wipe" class="anchor" href="#what-type-of-device-would-you-like-to-wipe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What type of device would you like to wipe?</h2>
 <ol>
-<li><a href="#windows">Wipe Windows Laptop</a></li>
-<li><a href="#mac">Wipe Mac Laptop</a></li>
-<li><a href="#ios">Wipe iOS Phone</a></li>
-<li><a href="#android">Wipe Android Phone</a></li>
+<li><a href="#wipe-windows-laptop">Wipe Windows Laptop</a></li>
+<li><a href="#wipe-mac-laptop">Wipe Mac Laptop</a></li>
+<li><a href="#wipe-ios-phone">Wipe iOS Phone</a></li>
+<li><a href="#wipe-android-phone">Wipe Android Phone</a></li>
+<li><a href="#extra-information">Extra Information</a></li>
 </ol>
+<h2>
+<a id="user-content-wipe-windows-laptop" class="anchor" href="#wipe-windows-laptop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wipe Windows Laptop</h2>
+<ol>
+<li>
+<p>Log out of any accounts you are using on your computer.</p>
+</li>
+<li>
+<p>Get a USB drive you can erase.  Any size will do.  The boot image is only 16 megabytes.</p>
+</li>
+<li>
+<p>Download and install <a href="https://www.balena.io/etcher" rel="nofollow">balendaEtcher</a></p>
+</li>
+<li>
+<p>Download <a href="http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso/download" rel="nofollow">DBAN</a> boot image</p>
+</li>
+<li>
+<p>Burn <code>dban-2.3.0_i586.iso</code> using <code>balenaEtcher</code></p>
+ <a href="img/balenaEtcher-001.png" target="_blank" rel="noopener noreferrer"><img src="img/balenaEtcher-001.png" width="640" style="max-width:100%;"></a>
+</li>
+<li>
+<p>Boot to <code>DBAN</code> usb stick</p>
+<ul>
+<li>Search for how to boot a USB stick online. Ex. Enter the search: <code>dell boot to usb stick</code>
+</li>
+<li>Common laptops
+<ul>
+<li><a href="https://support.lenovo.com/us/en/solutions/ht500207" rel="nofollow">Lenovo</a></li>
+<li><a href="https://www.windowspasswordsreset.com/blog/boot-menu-key-and-bios-key-for-dell-laptop-and-desktop/" rel="nofollow">Dell</a></li>
+<li><a href="https://support.microsoft.com/en-us/help/4023511/surface-boot-surface-from-a-usb-device" rel="nofollow">Microsoft Surface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Afer you boot <code>DBAN</code>, your screen should look like this. Press <code>ENTER</code> to go to the main menu screen.</p>
+<a href="img/Dban-001-Boot.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-001-Boot.png" width="640" style="max-width:100%;"></a>
+</li>
+<li>
+<p>Use the <code>Arrow Keys</code> and  <code>SPACE</code> to select the hard drive you want to wipe. It should say <code>[wipe]</code>.
+<a href="img/Dban-002-MainMenu.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-002-MainMenu.png" width="640" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>Press <code>M</code> to select the <code>Wipe Method</code>.  We recommend <code>Gutmann Wipe</code> but if that it too
+slow, you can use <code>DoD 5220.220-M</code>. Press <code>SPACE</code> to select and go back to the main menu.
+<a href="img/Dban-003-Config.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-003-Config.png" width="640" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>Review the config and press <code>F10</code> to start the wipe.
+<a href="img/Dban-004-Wipe.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-004-Wipe.png" width="640" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>Leave the laptop alone for a while. It will take a lot of time.</p>
+</li>
+</ol>
+<h2>
+<a id="user-content-wipe-mac-laptop" class="anchor" href="#wipe-mac-laptop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wipe Mac Laptop</h2>
+<ol>
+<li>
+<p>Sign out of iTunes</p>
+<ul>
+<li>Open iTunes</li>
+<li>From the menu bar at the top of your computer screen or at the top of the iTunes window, choose <code>Account &gt; Authorizations &gt; Deauthorize This Computer</code>.</li>
+<li>When prompted, enter your Apple ID and password. Then click <code>Deauthorize</code>.
+<a href="img/Mac-001-iTunes.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Mac-001-iTunes.jpg" width="640" style="max-width:100%;"></a>
+</li>
+</ul>
+</li>
+<li>
+<p>Sign out of iCloud</p>
+<ul>
+<li>Choose Apple menu <code> &gt; System Preferences</code>, then click <code>Apple ID</code>.</li>
+<li>Choose <code>iCloud</code> in the side panel and <code>Turn off Find My Mac</code>.
+<a href="img/Mac-002-FindMyMac.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Mac-002-FindMyMac.jpg" width="640" style="max-width:100%;"></a>
+</li>
+<li>Then select <code>Overview</code> in the side panel and click <code>Sign Out</code>.
+<a href="img/Mac-003-iCloud.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Mac-003-iCloud.jpg" width="640" style="max-width:100%;"></a>
+</li>
+</ul>
+</li>
+<li>
+<p>Sign out of <code>iMessage</code></p>
+<ul>
+<li>In the <code>Messages</code> app, choose <code>Messages &gt; Preferences</code>, click <code>iMessage</code>, then click <code>Sign Out</code>.</li>
+</ul>
+</li>
+<li>
+<p>Restart your mac <code> &gt; Restart...</code>.  Press <code>Command (⌘)-R</code> during the boot to enter recovery mode and login.
+<a href="img/Mac-004-Recovery.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Mac-004-Recovery.jpg" width="640" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>Start <code>DiskUtility</code>.</p>
+<a href="img/Mac-005-DiskUtility.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Mac-005-DiskUtility.jpg" width="640" style="max-width:100%;"></a>
+</li>
+<li>
+<p>Choose <code>View &gt; Show All Devices</code> from the menu bar in <code>Disk Utility</code>. The sidebar now shows your disks (devices) and any containers and volumes within them. The disk your Mac started up from is at the top of the list. Click the <code>Erase</code> button at the top center of the window.</p>
+<a href="img/Mac-006-Erase.png" target="_blank" rel="noopener noreferrer"><img src="img/Mac-006-Erase.png" width="640" style="max-width:100%;"></a>
+</li>
+<li>
+<p>Click <code>Security Options</code> and select the <code>Most Secure</code>. Click <code>Ok</code>. Click <code>Erase</code> to start the format.</p>
+<a href="img/Mac-007-SecurityOptions.png" target="_blank" rel="noopener noreferrer"><img src="img/Mac-007-SecurityOptions.png" width="640" style="max-width:100%;"></a>
+</li>
+<li>
+<p>Reinstall <a href="https://support.apple.com/en-us/HT201314" rel="nofollow">MacOS</a> (Optional)</p>
+</li>
+</ol>
+<h2>
+<a id="user-content-wipe-ios-phone" class="anchor" href="#wipe-ios-phone" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wipe iOS Phone</h2>
+<p>iOS as <code>Factory Reset Protection</code> which will not allow your phone to be used by others if you have an account logged in while you reset.  You will need to log out of your accounts before resetting.</p>
+<ol>
+<li>Make sure the phone is plugged in and charged to at least <code>50%</code>.</li>
+<li>Deregister your iMessage
+<ul>
+<li>
+<code>Settings &gt; Messages</code> and tap <code>Sign Out</code>.</li>
+</ul>
+</li>
+<li>Sign out of iTunes, iCloud, &amp; AppStore
+<ul>
+<li>
+<em>iOS 10.3</em>: Tap <code>Settings &gt; [your name]</code>. Scroll down and tap <code>Sign Out</code>. Enter your Apple ID password and tap <code>Turn Off</code>.</li>
+<li>
+<em>iOS 10.2</em>: Tap <code>Settings &gt; iCloud &gt; Sign Out</code>. Tap <code>Sign Out</code> again, then tap <code>Delete from My iPhone</code> and enter your Apple ID password.
+Then go to <code>Settings &gt; iTunes &amp; App Store &gt; Apple ID &gt; Sign Out</code>.</li>
+</ul>
+</li>
+<li>Erase the iPhone
+<ul>
+<li>Tap <code>General &gt; Reset &gt; Erase All Content and Settings</code>. If you turned on <code>Find My iPhone</code>, you might need to enter your Apple ID and password.</li>
+</ul>
+</li>
+</ol>
+<h2>
+<a id="user-content-wipe-android-phone" class="anchor" href="#wipe-android-phone" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wipe Android Phone</h2>
+<p>Android as <code>Factory Reset Protection</code> which will not allow your phone to be used by others if you have an account logged in while you reset.  You will need to log out of your accounts before resetting.</p>
+<ol>
+<li>Make sure the phone is plugged in and charged to at least <code>50%</code>.</li>
+<li>Remove all your <code>Accounts</code> on the phone.
+<ul>
+<li>Tap <code>Settings &gt; Accounts</code>
+</li>
+<li>Select each individual account and tap <code>Remove Account</code>
+</li>
+<li>Make sure the <code>Accounts</code> list is empty</li>
+</ul>
+</li>
+<li>Reset your phone
+<ul>
+<li>Tap <code>Settings &gt; System &gt; Reset options &gt; Erase all data (factory reset)</code>
+</li>
+<li>Confirm by tapping <code>Erase all data</code>
+</li>
+<li>Wait until complete</li>
+</ul>
+</li>
+</ol>
+<h2>
+<a id="user-content-extra-information" class="anchor" href="#extra-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Extra Information</h2>
+<ul>
+<li>
+<a href="https://support.apple.com/en-us/HT201274" rel="nofollow">How to erase your iPhone, iPad, or iPod touch</a>.</li>
+<li>
+<a href="https://support.apple.com/en-us/HT201065" rel="nofollow">What to do before you sell, give away, or trade in your Mac</a>.</li>
+<li><a href="https://support.apple.com/en-us/HT201351" rel="nofollow">What to do before you sell, give away, or trade in your iPhone, iPad, or iPod touch</a></li>
+<li><a href="https://support.apple.com/en-us/HT203042" rel="nofollow">Deregister iMessage on your iPhone</a></li>
+<li><a href="https://support.google.com/android/answer/6088915?hl=en" rel="nofollow">Reset your Android device to factory settings</a></li>
+</ul>
 
               </article>
             </div>
