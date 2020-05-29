@@ -102,3 +102,5 @@ Android as `Factory Reset Protection` which will not allow your phone to be used
 * [What to do before you sell, give away, or trade in your iPhone, iPad, or iPod touch](https://support.apple.com/en-us/HT201351)
 * [Deregister iMessage on your iPhone](https://support.apple.com/en-us/HT203042)
 * [Reset your Android device to factory settings](https://support.google.com/android/answer/6088915?hl=en)
+* [How to Securely Wipe a Hard Drive on Your Mac](https://www.howtogeek.com/179284/how-to-securely-wipe-a-hard-drive-on-your-mac/)
+* [ How to Erase a Hard Drive Using DBAN](https://www.lifewire.com/how-to-erase-a-hard-drive-using-dban-2619148)
