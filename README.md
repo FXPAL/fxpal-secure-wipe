@@ -1,13 +1,39 @@
 # How to securely wipe your laptop and/or mobile phones
 
 ## What type of device would you like to wipe?
-1. [Wipe Windows Laptop](#wipe-windows-laptop)
+1. [Wipe Windows Laptop (Purchasing)](#wipe-windows-laptop)
+1. [Wipe Windows Laptop (Returning)](#wipe-windows-laptop)
 2. [Wipe Mac Laptop](#wipe-mac-laptop)
 3. [Wipe iOS Phone](#wipe-ios-phone)
 4. [Wipe Android Phone](#wipe-android-phone)
 5. [Extra Information](#extra-information)
 
-## Wipe Windows Laptop
+## Wipe Windows Laptop (Purchasing)
+
+Follow these instructions if *you want to purchase your machine*.
+
+1. Open `Settings > Update & Security > Recovery`
+1. Click `Get Started` button under `Reset this PC`
+
+    <img src="img/Win-001-Recovery.png" width="640" />
+
+1. Click `Remove everything`
+
+    <img src="img/Win-002-ResetWizard.png" width="640" />
+
+1. Click `Next`
+
+    <img src="img/Win-003-ResetWizard.png" width="640" />
+
+1. Click `Reset`
+
+    <img src="img/Win-004-ResetWizard.png" width="640" />
+
+1. This will take a while and reboot multiple times. Leave it alone for a while.
+
+## Wipe Windows Laptop (Returning)
+
+Follow these instructions if *you don't want to purchase your machine*.
 
 1. Log out of any accounts you are using on your computer.
    * Ex. Office365, Slack, Zoom, etc..
