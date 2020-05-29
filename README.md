@@ -10,6 +10,7 @@
 ## Wipe Windows Laptop
 
 1. Log out of any accounts you are using on your computer.
+   * Ex. Office365, Slack, Zoom, etc..
 2. Get a USB drive you can erase.  Any size will do.  The boot image is only 16 megabytes.
 3. Download and install [balendaEtcher](https://www.balena.io/etcher)
 4. Download [DBAN](http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso/download) boot image
