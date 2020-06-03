@@ -80,8 +80,8 @@
 <h2>
 <a id="user-content-what-type-of-device-would-you-like-to-wipe" class="anchor" href="#what-type-of-device-would-you-like-to-wipe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What type of device would you like to wipe?</h2>
 <ol>
-<li><a href="#wipe-windows-laptop">Wipe Windows Laptop (Purchasing)</a></li>
-<li><a href="#wipe-windows-laptop">Wipe Windows Laptop (Returning)</a></li>
+<li><a href="#wipe-windows-laptop-purchasing">Wipe Windows Laptop (Purchasing)</a></li>
+<li><a href="#wipe-windows-laptop-returning">Wipe Windows Laptop (Returning)</a></li>
 <li><a href="#wipe-mac-laptop">Wipe Mac Laptop</a></li>
 <li><a href="#wipe-ios-phone">Wipe iOS Phone</a></li>
 <li><a href="#wipe-android-phone">Wipe Android Phone</a></li>
@@ -131,14 +131,17 @@
 <p>Download and install <a href="https://www.balena.io/etcher" rel="nofollow">balendaEtcher</a></p>
 </li>
 <li>
-<p>Download <a href="http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso/download" rel="nofollow">DBAN</a> boot image</p>
+<p>Download <a href="https://github.com/PartialVolume/shredos.2020.02/releases/download/v2020.02.004-0.29.006/shredos.img.tar.gz">ShredOS</a> boot image</p>
 </li>
 <li>
-<p>Burn <code>dban-2.3.0_i586.iso</code> using <code>balenaEtcher</code></p>
+<p>Uncompress <code>shredos.img.tar.gz</code> using a decompressor program (<a href="https://www.7-zip.org/" rel="nofollow">7-zip</a>, <a href="https://www.winzip.com/win/en/" rel="nofollow">winzip</a>, <a href="https://www.rarlab.com/download.htm" rel="nofollow">Winrar</a>)</p>
+</li>
+<li>
+<p>Burn <code>shredos-20200418.img</code> using <code>balenaEtcher</code></p>
  <a href="img/balenaEtcher-001.png" target="_blank" rel="noopener noreferrer"><img src="img/balenaEtcher-001.png" width="640" style="max-width:100%;"></a>
 </li>
 <li>
-<p>Boot to <code>DBAN</code> usb stick</p>
+<p>Boot to <code>ShredOS</code> usb stick image</p>
 <ul>
 <li>Search for how to boot a USB stick online. Ex. Enter the search: <code>dell boot to usb stick</code>
 </li>
@@ -156,13 +159,13 @@
 <a href="img/Dban-001-Boot.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-001-Boot.png" width="640" style="max-width:100%;"></a>
 </li>
 <li>
-<p>Use the <code>Arrow Keys</code> and  <code>SPACE</code> to select the hard drive you want to wipe. It should say <code>[wipe]</code>.
-<a href="img/Dban-002-MainMenu.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-002-MainMenu.png" width="640" style="max-width:100%;"></a></p>
+<p>Use the <code>Arrow Keys</code> and  <code>SPACE</code> to select the hard drive you want to wipe. It should say <code>[wipe]</code>.</p>
+<a href="img/Dban-002-MainMenu.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-002-MainMenu.png" width="640" style="max-width:100%;"></a>
 </li>
 <li>
-<p>Press <code>M</code> to select the <code>Wipe Method</code>.  We recommend <code>Gutmann Wipe</code> but if that it too
-slow, you can use <code>DoD 5220.220-M</code>. Press <code>SPACE</code> to select and go back to the main menu.
-<a href="img/Dban-003-Config.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-003-Config.png" width="640" style="max-width:100%;"></a></p>
+<p>Press <code>M</code> to select the <code>Wipe Method</code>.  We recommend <code>DoD 5220.220-M</code> but if that it too
+slow, you can use <code>DoD Short</code>. Press <code>SPACE</code> to select and go back to the main menu.</p>
+<a href="img/Dban-003-Config.png" target="_blank" rel="noopener noreferrer"><img src="img/Dban-003-Config.png" width="640" style="max-width:100%;"></a>
 </li>
 <li>
 <p>Review the config and press <code>F10</code> to start the wipe.

@@ -1,8 +1,8 @@
 # How to securely wipe your laptop and/or mobile phones
 
 ## What type of device would you like to wipe?
-1. [Wipe Windows Laptop (Purchasing)](#wipe-windows-laptop)
-1. [Wipe Windows Laptop (Returning)](#wipe-windows-laptop)
+1. [Wipe Windows Laptop (Purchasing)](#wipe-windows-laptop-purchasing)
+1. [Wipe Windows Laptop (Returning)](#wipe-windows-laptop-returning)
 2. [Wipe Mac Laptop](#wipe-mac-laptop)
 3. [Wipe iOS Phone](#wipe-ios-phone)
 4. [Wipe Android Phone](#wipe-android-phone)
@@ -37,13 +37,14 @@ Follow these instructions if *you don't want to purchase your machine*.
 
 1. Log out of any accounts you are using on your computer.
    * Ex. Office365, Slack, Zoom, etc..
-2. Get a USB drive you can erase.  Any size will do.  The boot image is only 16 megabytes.
-3. Download and install [balendaEtcher](https://www.balena.io/etcher)
-4. Download [DBAN](http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso/download) boot image
-6. Burn `dban-2.3.0_i586.iso` using `balenaEtcher`
+1. Get a USB drive you can erase.  Any size will do.  The boot image is only 16 megabytes.
+1. Download and install [balendaEtcher](https://www.balena.io/etcher)
+1. Download [ShredOS](https://github.com/PartialVolume/shredos.2020.02/releases/download/v2020.02.004-0.29.006/shredos.img.tar.gz) boot image
+1. Uncompress `shredos.img.tar.gz` using a decompressor program ([7-zip](https://www.7-zip.org/), [winzip](https://www.winzip.com/win/en/), [Winrar](https://www.rarlab.com/download.htm))
+1. Burn `shredos-20200418.img` using `balenaEtcher`
 
     <img src="img/balenaEtcher-001.png" width="640" />
-7. Boot to `DBAN` usb stick
+7. Boot to `ShredOS` usb stick image
     * Search for how to boot a USB stick online. Ex. Enter the search: `dell boot to usb stick`
     * Common laptops
       * [Lenovo](https://support.lenovo.com/us/en/solutions/ht500207)
@@ -53,10 +54,14 @@ Follow these instructions if *you don't want to purchase your machine*.
 
    <img src="img/Dban-001-Boot.png" width="640" />
 8. Use the `Arrow Keys` and  `SPACE` to select the hard drive you want to wipe. It should say `[wipe]`.
+
    <img src="img/Dban-002-MainMenu.png" width="640" />
-9. Press `M` to select the `Wipe Method`.  We recommend `Gutmann Wipe` but if that it too
-   slow, you can use `DoD 5220.220-M`. Press `SPACE` to select and go back to the main menu.
+
+9. Press `M` to select the `Wipe Method`.  We recommend `DoD 5220.220-M` but if that it too
+   slow, you can use `DoD Short`. Press `SPACE` to select and go back to the main menu.
+
    <img src="img/Dban-003-Config.png" width="640" />
+
 10. Review the config and press `F10` to start the wipe.
     <img src="img/Dban-004-Wipe.png" width="640" />
 11. Leave the laptop alone for a while. It will take a lot of time.
